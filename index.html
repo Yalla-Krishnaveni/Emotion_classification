@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>emotions</title>
+</head>
+<body>
+<center>
+    <table>
+        <tr> <td><center><h3>Emotions Classification</h3></center></td></tr>
+        <br>
+        <br>
+        <br>
+<form action="./predict" method="post">
+        <tr>
+            <td><label for="textbox">Enter your Text</label></td>
+        </tr>
+    <tr>
+       <td>
+                <textarea id="textbox" name="textbox" rows="7" cols="50" placeholder="Please Paste or Enter your text......"></textarea><br>
+            </td>
+    </tr>
+       <tr>
+            <td colspan="10"><input id="btn" type="submit" value="Predict" /></td>
+        </tr><br>
+       <tr>
+            <td><p>Prediction:{{prog}}</p></td>
+        </tr><br><br>
+</form>
+            </table>
+</center>
+</body>
+</html>
